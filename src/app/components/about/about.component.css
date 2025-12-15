@@ -1,0 +1,106 @@
+.about-section {
+    padding: var(--section-padding);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Redesigned Summary Section */
+.summary {
+    position: relative;
+    padding: 2rem;
+    padding-left: 3rem;
+    background: linear-gradient(to right, rgba(109, 40, 217, 0.05), transparent);
+    border-radius: 0 20px 20px 0;
+}
+
+.summary::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--gradient-main);
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(109, 40, 217, 0.5);
+}
+
+.summary h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.summary p {
+    color: var(--text-primary);
+    font-size: 1.15rem;
+    line-height: 1.9;
+    font-weight: 300;
+    max-width: 900px;
+}
+
+/* Education & Certifications - Keeping Cards */
+.education-cert-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.education h3,
+.certifications h3,
+.achievements h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.edu-item,
+.cert-item,
+.ach-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--glass-border);
+}
+
+.edu-item h4,
+.cert-item h4,
+.ach-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.institution {
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.year {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .education-cert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .summary {
+        padding-left: 1.5rem;
+    }
+}

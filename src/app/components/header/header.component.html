@@ -1,0 +1,20 @@
+<header class="header">
+    <div class="container navbar">
+        <div class="logo">
+            <a href="#">Malli<span>.dev</span></a>
+        </div>
+        <nav class="nav" [class.active]="isMenuOpen">
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link" (click)="closeMenu()">Home</a></li>
+                <li><a href="#about" class="nav-link" (click)="closeMenu()">About</a></li>
+                <li><a href="#skills" class="nav-link" (click)="closeMenu()">Skills</a></li>
+                <li><a href="#experience" class="nav-link" (click)="closeMenu()">Experience</a></li>
+                <li><a href="#projects" class="nav-link" (click)="closeMenu()">Projects</a></li>
+                <li><a href="#contact" class="nav-link" (click)="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-toggle" (click)="toggleMenu()">
+            <i class="fas" [class.fa-bars]="!isMenuOpen" [class.fa-times]="isMenuOpen"></i>
+        </div>
+    </div>
+</header>
