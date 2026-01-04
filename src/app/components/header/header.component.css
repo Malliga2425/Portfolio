@@ -26,6 +26,26 @@
     color: var(--primary-color);
 }
 
+.logo-text {
+    display: inline-block;
+    color: var(--text-primary) !important;
+    /* Override parent color */
+    animation: spinWord 4s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes spinWord {
+
+    0%,
+    75% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
 .nav-list {
     display: flex;
     gap: 2rem;

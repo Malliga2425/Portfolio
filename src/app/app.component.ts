@@ -9,6 +9,11 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { EducationComponent } from './components/education/education.component';
+import { CertificationsComponent } from './components/certifications/certifications.component';
+import { AchievementsComponent } from './components/achievements/achievements.component';
+
+
 
 @Component({
   selector: 'app-root',
@@ -22,7 +27,10 @@ import { FooterComponent } from './components/footer/footer.component';
     ExperienceComponent,
     ProjectsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    EducationComponent,
+    CertificationsComponent,
+    AchievementsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

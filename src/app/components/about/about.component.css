@@ -17,6 +17,14 @@
     border-radius: 0 20px 20px 0;
 }
 
+.summary i {
+    color: #0d6efd;
+    margin: 0 6px;
+    vertical-align: middle;
+    font-size: 0.95rem;
+}
+
+
 .summary::before {
     content: '';
     position: absolute;
@@ -47,53 +55,7 @@
     max-width: 900px;
 }
 
-/* Education & Certifications - Keeping Cards */
-.education-cert-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
 
-.education h3,
-.certifications h3,
-.achievements h3 {
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    font-size: 1.4rem;
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-.edu-item,
-.cert-item,
-.ach-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding-left: 1rem;
-    border-left: 1px solid var(--glass-border);
-}
-
-.edu-item h4,
-.cert-item h4,
-.ach-item h4 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-primary);
-}
-
-.institution {
-    color: var(--accent-color);
-    font-weight: 500;
-    font-size: 0.95rem;
-}
-
-.year {
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-    font-style: italic;
-}
 
 @media (max-width: 768px) {
     .education-cert-grid {

@@ -2,13 +2,16 @@
     <div class="container hero-content">
         <div class="hero-text">
             <h3 class="greeting">Hello, I'm</h3>
-            <h1 class="name">Malliga Sozhan</h1>
+            <h1 class="name" [class.crystal-shadow]="isCrystalActive">
+                Malliga Sozhan
+            </h1>
             <h2 class="role">Software Engineer</h2>
             <p class="tagline">Specializing in Python, ASR, and Voice Biometrics.</p>
 
             <div class="cta-buttons">
                 <a href="#contact" class="btn btn-primary">Contact Me</a>
-                <a href="assets/Malliga_software_developer.pdf" class="btn btn-outline"><i class="fas fa-download"></i> Download Resume</a>
+                <a href="assets/Malliga_software_developer.pdf" class="btn btn-outline"><i class="fas fa-download"></i>
+                    Download Resume</a>
             </div>
         </div>
 

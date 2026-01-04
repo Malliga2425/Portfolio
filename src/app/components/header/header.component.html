@@ -1,7 +1,7 @@
 <header class="header">
     <div class="container navbar">
         <div class="logo">
-            <a href="#">Malli<span>.dev</span></a>
+            <a href="#"><span class="logo-text">Malli</span><span>.dev</span></a>
         </div>
         <nav class="nav" [class.active]="isMenuOpen">
             <ul class="nav-list">
@@ -17,4 +17,5 @@
             <i class="fas" [class.fa-bars]="!isMenuOpen" [class.fa-times]="isMenuOpen"></i>
         </div>
     </div>
+    <app-reading-progress></app-reading-progress>
 </header>

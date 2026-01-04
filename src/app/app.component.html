@@ -5,6 +5,15 @@
   <app-skills id="skills"></app-skills>
   <app-experience id="experience"></app-experience>
   <app-projects id="projects"></app-projects>
+
+  <section class="container" style="padding: 5rem 1rem; display: flex; flex-direction: column; gap: 2rem;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;" class="edu-grid">
+      <app-education></app-education>
+      <app-certifications></app-certifications>
+    </div>
+    <app-achievements></app-achievements>
+  </section>
+
   <app-contact id="contact"></app-contact>
 </main>
 <app-footer></app-footer>
